@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Mi Portafolio</title>
+</head>
+
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <img class="cabecera__logo" src="./img/auto_awesome_black_24dp 1.svg" alt="Logo">
+        <h1 class="cabecera__titulo">Portafolio de María Orozco</h1>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Presentación -->
+    <section class="presentacion">
+        <img class="presentacion__foto" src="./img/file(1).jpg" alt="Foto de perfil">
+        <div class="presentacion__contenedor">
+            <h2 class="presentacion__titulo">Hola, mi nombre es María Fernanda Orozco González y construyo paginas web</h2>
+            <p class="presentacion__subtitulo">Candidata a Ing. Mecatrónica y desarrollo web front-end. Tengo 23 años y soy de Colombia; Como persona amante del diseño y el dibujo, busco crear proyectos agradables e intuitivos para el usuario.</p>
+            <ul class="redes">
+                <li class="redes__img"><a href="https://github.com/MariaOrozco28" target="_blank">Github <img src="./img/arrow_back_black_24dp 1.svg" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.linkedin.com/in/maría-fernanda-orozco-gonzález-229421186/" target="_blank">Linkedin <img src="./img/arrow_back_black_24dp 1.svg" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://www.instagram.com/kazumi2811/" target="_blank">Instagram <img src="./img/arrow_back_black_24dp 1.svg" alt="Flecha"></a></li>
+                <li class="redes__img"><a href="https://drive.google.com/file/d/1Alf-ly9BIxe_wZEP21hXWrRcwVUvfwkD/view?usp=sharing" target="_blank">Currículo <img src="./img/arrow_back_black_24dp 1.svg" alt="Flecha"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección sobre mí -->
+    <section class="sobre-mi" id="sobre-mi">
+        <h2 class="sobre-mi__titulo">Sobre mí</h2>
+        <p class="sobre-mi__texto">Candidata a Ingeniería en Mecatrónica y estudiante del programa ONE. Tengo disponibilidad de horario y una gran capacidad para adaptarme a nuevas tareas y procesos. Soy responsable, proactiva y respetuosa, con una actitud positiva y una gran determinación. Estoy segura de que puedo aportar valor significativo a cualquier equipo al que me sea asignado.
+        </p>
+        <!-- Firma opcional 
+        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">-->
+    </section>
+
+    <!-- Sección de Habilidades -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="habilidades__titulo">Habilidades</h2>
+        <div class="habilidades__lista">
+            <ul class="habilidades__lista__front">
+                <h3 class="habilidades__lista__titulo">Front-End</h3>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/html.svg" alt="HTML">
+                    <p class="habilidades__nombre">HTML 5</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/js.svg" alt="JavaScript">
+                    <p class="habilidades__nombre">JavaScript</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/css-file 1.svg" alt="CSS">
+                    <p class="habilidades__nombre">CSS</p>
+                </li>
+            </ul>
+            <ul class="habilidades__lista__learning__tools">
+                <h3 class="habilidades__lista__titulo">Aprendiendo</h3>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/react.svg" alt="React">
+                    <p class="habilidades__nombre">React</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/python.svg" alt="Python">
+                    <p class="habilidades__nombre">Python</p>
+                </li>
+            </ul>
+            <ul class="habilidades__lista__learning__tools">
+                <h3 class="habilidades__lista__titulo">Herramientas</h3>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/figma.svg" alt="Figma">
+                    <p class="habilidades__nombre">Figma</p>
+                </li>
+                <li class="habilidades__elemento">
+                    <img class="habilidades__icono" src="./img/icons8-visual-studio-code-2019-32.png" alt="Visual Studio Code">
+                    <p class="habilidades__nombre">Visual Studio Code</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección de Aficiones -->
+    <section class="aficiones" id="aficiones">
+        <h2 class="aficiones__titulo">Aficiones</h2>
+        <ul class="aficiones__lista">
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/icons8-mi-computadora-32.png" alt="Patinaje">
+                <p class="aficiones__nombre">Jugar juegos online y offline</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/Vector.svg" alt="Tocar bajo">
+                <p class="aficiones__nombre">Oír música</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/tv_black_24dp 1.svg" alt="Oír música">
+                <p class="aficiones__nombre">Ver series</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/icons8-dibujar-32.png" alt="Ver series">
+                <p class="aficiones__nombre">Dibujar</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/icons8-blender-3d-32.png" alt="Cocinar">
+                <p class="aficiones__nombre">modelado 3D, Blender</p>
+            </li>
+            <li class="aficiones__elemento">
+                <img class="aficiones__icono" src="./img/icons8-comic-32.png" alt="Tomar fotos">
+                <p class="aficiones__nombre">Leer manga</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Formación académica -->
+    <section class="formacion" id="formacion">
+        <h2 class="formacion__titulo">Formación académica</h2>
+        <ul class="formacion__lista">
+            <li class="formacion__elemento">
+                <img class="formacion__icono" src="./img/image 9.png" alt="UniPamplona">
+                <div>
+                    <h3 class="formacion__nombre">Ingeniería Mecatrónica</h3>
+                    <p class="formacion__detalle">En curso - Universidad de Pamplona</p>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <img class="formacion__icono" src="./img/image 10.png" alt="Alura LATAM">
+                <div>
+                    <h3 class="formacion__nombre">Formación en Front-End</h3>
+                    <p class="formacion__detalle">En curso - Alura LATAM + ORACLE</p>
+                </div>
+            </li>
+            <li class="formacion__elemento">
+                <img class="formacion__icono" src="./img/image 11.png" alt="SENA">
+                <div>
+                    <h3 class="formacion__nombre">Cursos virtuales cortos del Sena, 
+                        Servicio al cliente y Digitación de textos</h3>
+                    <p class="formacion__detalle">2023 - SENA</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section class="proyectos" id="proyectos">
+        <h2 class="proyectos__titulo">Mis Proyectos</h2>
+        <div class="botones">
+            <button class="boton active" data-filter="boton_todo">Todo</button>
+            <button class="boton" data-filter="robotica">Robótica</button>
+            <button class="boton" data-filter="web">Web</button>
+            <button class="boton" data-filter="dibujos">Dibujos</button>
+        </div>
+        <div class="contenedor">
+            <div class="item" data-category="robotica">
+                <div class="items">
+                    <div class="slider" id="slider1">
+                        <div class="slides-container">
+                            <div class="slides">
+                                <img src="./img/1b341429-1a0f-455f-ab61-52d9cd4b692f.jpeg" alt="Imagen 1">
+                                <img  src="./img/WhatsApp Image 2024-08-04 at 7.0.jpg" alt="Imagen 2">
+                                <img src="./img/a49e7df3-5f51-44ca-add2-460adc250f6b.jpeg" alt="Imagen 3">
+                                <img src="./img/WhatsApp Image 2024-06-05 at 5.18.10 PM.jpeg" alt="Imagen 4">   
+                            </div>
+                        </div>
+                        <div class="boton_sig">
+                            <button class="prev" onclick="moverSlides(-1, 'slider1')">&#10094;</button>
+                            <button class="next" onclick="moverSlides(1, 'slider1')">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <div class="titulo">
+                            <p> ETHAN</p>
+                            <p>Robot clasificador de residuos</p>
+                        </div>
+                     <p class="parrafo">Proyecto realizado en matlab para la asigntura robótica 1 y 2; en el que se realizó un robot manipulador de 4GDL todos con movimiento rotacional, aplicado a clasificar residuos tanto granulado (cuentas de manilla) como líquido (tempera). Se unen en robot el modelo cinematico a nivel directo e inverso, además se obtuvo el universo de localizaciones para asi obtener una visualización del volumen de trabajo. Con el modelado base se realizo la HMI de control cinematico que permite la ejecución de trayectorias eje a eje, eje simultáneo, isócrona y continúa, usando interpoladores trapezoidales y cúbicos. Una vez desarrolladola gestión de trayectorias; se realizo la percepción de la visión artificial para clasificar ya sea granulado o líquido, junto al color correspondiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item" data-category="web">
+                <div class="items">
+                    <div class="slider" id="slider2">
+                        <div class="slides-container">
+                            <div class="slides">
+                                <img src="./img/tema-claro-encrip.png" alt="Imagen 1">
+                                <img src="./img/tema-oscuro-encrip.png" alt="Imagen 2"> 
+                            </div>
+                        </div>
+                        <div class="boton_sig">
+                            <button class="prev" onclick="moverSlides(-1,'slider2')">&#10094;</button>
+                            <button class="next" onclick="moverSlides(1, 'slider2')">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                     <p class="titulo">Encriptador y Desencriptador de texto</p>
+                     <p class="parrafo">Proyecto challenge para avanzar en el programa ONE de Alura Latam en conjunto con Oracle; dicho proyecto solo permite letras minúsculas sin acento ni carácteres especiales (incluida la 'ñ'), encripta el texto con unas llaves, cambiando las vocales por otras plabras. Se implementarón dos temas, uno claro y uno oscuro, se puede escoger dependiendo de tu gusto a través del toggle o el interruptor de la esquina superior derecha. </p>
+                        <div class="links">
+                            <a href="https://github.com/MariaOrozco28/challenger-encriptador" class="links_presentacion" target="_blank">
+                                <img src="./img/icons8-github-50 (2).png">
+                                Repositorio
+                            </a>
+                            <a href="https://challenger-encriptador-nine.vercel.app" class="links_presentacion" target="_blank">
+                                <img src="./img/foto (1).png">
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" data-category="dibujos">
+                <div class="items">
+                    <div class="imgs_total">
+                        <div class="imagenes">
+                            <img src="./img/img_dibujos/chica adonis.png" class="imgs">
+                            <img src="./img/img_dibujos/chica asthetic.png" class="imgs">
+                            <img src="./img/img_dibujos/chica xd.png" class="imgs">
+                            <img src="./img/img_dibujos/foto perfil.png" class="imgs">
+                            <img src="./img/img_dibujos/luna1.jpg" class="imgs">
+                        </div>
+                        <a href="https://www.instagram.com/kazumi2811/" target="_blank" class="instagram">
+                            <img src="./img/icons8-instagram-50.png">
+                            Instagram</a>
+                        <div class="imagenes">
+                            <img src="./img/img_dibujos/mmm.png" class="imgs">
+                            <img src="./img/img_dibujos/mono chica.png" class="imgs">
+                            <img src="./img/img_dibujos/rosita modelo2.png" class="imgs">
+                            <img src="./img/img_dibujos/yo.png" class="imgs">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item" data-category="web">
+                <div class="items">
+                    <div class="slider" id="slider3">
+                        <div class="slides-container">
+                            <div class="slides">
+                                <img src="./img/Screenshot_1.png" alt="Imagen 1">
+                                <img src="./img/Screenshot_2.png" alt="Imagen 2"> 
+                                <img src="./img/Screenshot_3.png" alt="Imagen 3">
+                            </div>
+                        </div>
+                        <div class="boton_sig">
+                            <button class="prev" onclick="moverSlides(-1,'slider3')">&#10094;</button>
+                            <button class="next" onclick="moverSlides(1, 'slider3')">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                     <p class="titulo">Juego del Número Secreto</p>
+                     <p class="parrafo">Proyecto realizado durante el programa ONE, para la formación "Lógica de programación con JavaScript". El juego consiste en adivinar un número random del 1 al 10. Si te equivocas te irá diciendo si el número es menor o mayor; al final cuando aciertas te dice el número de intentos en que lo lograste. </p>
+                        <div class="links">
+                            <a href="https://github.com/MariaOrozco28/juego-Secreto" class="links_presentacion" target="_blank">
+                                <img src="./img/icons8-github-50 (2).png">
+                                Repositorio
+                            </a>
+                            <a href="https://juego-secreto-ashy-tau.vercel.app" class="links_presentacion" target="_blank">
+                                <img src="./img/foto (1).png">
+                                Demo</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <div class="item" data-category="web">
+                <div class="items">
+                    Item de web 3
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto" id="contacto">
+        <h2 class="contacto__titulo">Contacto</h2>
+        <P class="contacto__subtitulo">¿Quieres Contactarme?</P>
+        <p class="contacto__subtitulo">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+        <form class="contacto__formulario">
+            <input class="contacto__campo" type="text" placeholder="Nombre">
+            <input class="contacto__campo" type="email" placeholder="Correo Electrónico">
+            <textarea class="contacto__campo--textarea" placeholder="Mensaje"></textarea>
+            <button class="contacto__boton" type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+<button class="button">
+  <svg class="svgIcon" viewBox="0 0 384 512">
+    <path
+      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+  </svg>
+</button>
+
+<footer class="rodapie">
+    <p>Desarrollado por María Orozco</p>
+    <p>2024</p>
+</footer>
+    <script src="script.js"></script>
+    <script src="up.js"></script>
+</html>

@@ -1,0 +1,759 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #E2BBE9; /*fondo*/
+    --color-secundario: #5A639C;/*letra y borde slider*/
+    --color-terciario: #8b92c2;/*borde de los botones filtro*/
+    --color-header-footer: #baa7da;/*fondo header y footer, y contenedor items*/
+    --color-texto-img-header-footer: #4d4c8d;/*letra del header y footer, y fondo botones*/
+    --color-nombre: #947cbb;/*sombra de los botones*/
+    --color-seleccion: #262561;/*borde de los slider*/
+    --color-hover: #efd9f3; 
+    
+    --fuente-raleway:"Raleway", sans-serif;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    color:var(--color-secundario);
+    font-family: var(--fuente-raleway);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+ol, ul, li {
+    list-style: none;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    padding-inline-start: 0%;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-header-footer);
+    color: var(--color-secundario);
+    padding: 0 1rem;
+    gap: 8px;
+    position: fixed;/* posicion fija del elemento padre*/
+    top: 0; /*para que la cabecera se quede fija arriba*/
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+.cabecera__logo {
+    max-width: 100px;
+}
+
+.cabecera__titulo {
+    font-size: 1rem;
+}
+
+.navegacion{
+    position: fixed;
+    top: 0.8rem;
+    right: 1rem;
+}
+
+.navegacion__lista {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+}
+
+.navegacion__elemento a {
+    font-size: 1rem;
+    color: var(--color-secundario);
+}
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    padding: 2rem 8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 85px;
+}
+.presentacion__titulo{
+    font-size: 3.25rem;
+    margin-block-end: 0;
+}
+
+.presentacion__subtitulo{
+    font-size: 1.375rem;
+    margin-block-start: 0;
+}
+
+.presentacion__foto{
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--color-nombre);
+    border-radius: 10%; 
+    box-shadow: 1px 2px 2px 3px var(--color-nombre); 
+}
+
+.redes{
+    display: flex;
+    gap: 32px;
+    padding-inline-start: 0%;
+}
+
+.redes__img a{
+    display: flex;
+    align-items: center;
+    color: var(--color-secundario);
+    font-size: 1rem;
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 8rem;
+    margin-top: 64px;
+}
+
+.sobre-mi__titulo{
+    font-size: 2rem;
+    margin-block-start: 2%;
+    margin-block-end: 0;
+}
+.sobre-mi__texto{
+    font-size: 1rem;
+}
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.habilidades__titulo{
+    font-size: 2rem;
+    margin-block-start: 3%;
+    margin-block-end: 0;
+}
+
+.habilidades__lista__titulo{
+    font-size: 1.5rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.habilidades__nombre{
+    font-size: 1rem;
+}
+
+.habilidades__lista{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    
+}
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px 0px 10px;
+    width: 150px;
+    background-color: var(--color-header-footer);
+}
+
+.habilidades__icono{
+    width: 32px;
+    height: 32px;
+
+}
+
+.habilidades__lista__front, .habilidades__lista__learning__tools{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.aficiones__lista{
+    display: flex;
+    gap: 16px;
+}
+
+.aficiones__icono{
+    width: 32px;
+}
+
+.aficiones__nombre{
+    font-size: 1rem;
+}
+
+.aficiones__titulo{
+    font-size: 2rem;
+    margin-block-start: 3%;
+    margin-block-end: 0;
+}
+.aficiones__elemento{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0px 0px 10px;
+    width: 160px;
+    background-color: var(--color-header-footer);
+}
+
+/*------------------------------ Sección de Formación --------------------------------*/
+
+.formacion{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.formacion__lista{
+    display: flex;
+    gap: 16px;
+}
+
+.formacion__elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 368px;
+    background-color: var(--color-header-footer);
+    padding: 2%;
+}
+
+.formacion__icono{
+    width: 150px;
+}
+
+.formacion__nombre{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.formacion__detalle{
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.formacion__titulo{
+    font-size: 2rem;
+    margin-block-start: 3%;
+    margin-block-end: 0;
+}
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.proyectos__titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-block-start: 2%;
+    margin-block-end: 0;
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 20px;
+}
+
+
+.boton {
+    background-color: transparent;
+    border: 2px solid var(--color-terciario);
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-raleway);
+}
+
+.boton:hover {
+    background-color: var(--color-hover);
+    width: 105px; 
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    background-color: var(--color-header-footer);
+}
+.titulo{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.parrafo{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 2%;     
+    border-radius: 20px;
+    box-shadow: 1px 3px 4px 5px var(--color-header-footer);
+    
+}
+
+.slider {
+    max-width: 50%;
+    padding: 3%;
+    margin: 1% 0% 0% 2%;
+    overflow: hidden;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+.slides-container {
+    border: 5px solid var(--color-secundario); /* Añadir borde alrededor del contenedor de las imágenes */
+    border-radius: 10px; /* Opcional: redondear las esquinas del borde */
+    padding: 20px; /* Espacio interno del contenedor */
+    overflow: hidden; /* Asegurarse de que el contenido no se salga del contenedor */
+    background-color: var(--color-secundario);
+    box-shadow: 5px 5px 10px var(--color-secundario);
+}
+
+
+.slides img {
+    width: calc(100% - 20px); /* Ajusta el ancho de las imágenes para tener en cuenta el margen */
+    height: auto;
+    margin: 0 10px; /* Espacio entre imágenes */
+    border: 2px solid var(--color-seleccion);
+    border-radius: 5%;
+}
+
+
+.boton_sig {
+    display: flex;
+    gap: 75%;
+}
+
+.prev, .next {
+    top: 50%;
+    transform: translateY(80%);
+    background-color: var(--color-texto-img-header-footer);
+    color: var(--color-de-fondo);
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+
+.proyecto {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.boton_mover:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.links{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+    
+}
+.links_presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px;
+    width: 40%;
+    border-radius: 8px; /*radio del borde*/
+    font-size: 1rem;
+    font-weight: 600; /*especifica el peso o grueso de la letra, Poner texto a dos pasos más oscuro que lo
+    normal pero menos que una negrita estándar. */
+    padding: 21.5px 0;/*establece el área de relleno en los cuatro lados de un elemento a la vez. Arriba y abajo:21.5px  de relleno. izquierda y derecha: 0px  de relleno */
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-raleway);
+    box-shadow: 1px 2px 2px 3px var(--color-nombre);   
+}
+
+.links_presentacion:hover{
+    background-color: var(--color-hover);
+    box-shadow: 2px 4px 5px 3px var(--color-nombre);
+}
+
+
+
+.all{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.imgs_total{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.imagenes{
+    display: flex;
+    margin: 5%;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.imgs{
+    width: 180px;
+    height: auto;
+    border: 2px solid var(--color-seleccion);
+    border-radius: 10%;
+}
+.imgs:hover{
+    width: 200px;
+    border: none;
+    box-shadow: 2px 4px 5px 3px white;
+}
+
+.instagram{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 3px var(--color-nombre);  
+    color: var(--color-secundario);
+    font-weight: 400;
+}
+.instagram:hover{
+    background-color: var(--color-hover);
+    box-shadow: 2px 4px 5px 3px var(--color-nombre);
+}
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto__titulo{
+    text-align: center;
+    font-size: 2rem;
+    margin-block-start: 2%;
+    margin-block-end: 0;
+}
+
+.contacto__subtitulo{
+    font-size: 1rem;
+}
+
+.contacto__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contacto__campo{
+    width: 656px;
+    height: 56px;
+   
+}
+.contacto__campo--textarea,
+.contacto__campo{
+    border: 2px solid var(--color-seleccion);
+    font-family: var(--fuente-raleway);
+    font-size: 1rem;
+}
+
+.contacto__campo--textarea{
+    width: 656px;
+    height: 133px;
+    resize: none;
+}
+
+.contacto__boton{
+    background-color: var(--color-nombre);
+    color: var(--color-hover);
+    font-family: var(--fuente-raleway);
+    font-size: 1rem;
+    width: 144px;
+    height: 51px;
+    font-weight: 600;
+    border: 2px solid var(--color-seleccion);
+}
+
+/* ------------------------------ Rodapie ---------------------------------------------*/
+.rodapie {
+    background-color: var(--color-header-footer);
+    color: var(--color-texto-img-header-footer);
+    font-family: var(--fuente-raleway);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    gap: 5px;
+    padding: 1.5% 0 1.5% 0;
+}
+
+/* ------------------------------- boton arriba -------------------------------------*/
+
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-seleccion);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+  }
+  
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    width: 140px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: var(--color-nombre);
+    align-items: center;
+  }
+  
+  .button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: var(--color-hover);
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+  
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets*/
+@media (max-width: 1000px) {
+    
+    .cabecera__titulo{
+        font-size: 0.9rem;
+    }
+    .navegacion__elemento a {
+    font-size: 0.9rem;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 5rem;
+    }
+    .habilidades__lista{
+        gap:50px;
+        justify-content: center;
+        padding-left: 0%;
+    }
+    .aficiones{
+        padding: 10%;
+    }
+    .aficiones__lista{
+        padding-left: 15%;
+    }
+    .aficiones__elemento{
+        width: 150px;
+    }
+    .formacion{
+        padding: 10%;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafo, .titulo, .links{
+        margin-top: 5%;
+    }
+    
+    .slider {
+        max-width: 80%;
+        margin-left: 5%;
+    }
+    .prev, .next {
+        transform: translateY(30%);
+    }
+    .imgs{
+        width: 20%;
+    }
+}
+
+/* Pantallas pequeñas*/
+@media (max-width: 700px) {
+    
+    .cabecera__logo {
+        max-width: 80px; /* Ajuste para pantallas pequeñas */
+    }
+    
+    .cabecera__titulo {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .navegacion__elemento:nth-child(1),
+    .navegacion__elemento:nth-child(2),
+    .navegacion__elemento:nth-child(3),
+    .navegacion__elemento:nth-child(4),
+    .navegacion__elemento:nth-child(5){
+        display: none;
+    }
+    
+    .navegacion__elemento a {
+        font-size: 0.9rem;
+    }
+
+
+    .presentacion{
+        display: flex;
+        justify-content: center;
+        padding-left: 75%;
+    }
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        padding: 0% 0% 0 20%;
+    } 
+    .habilidades{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        padding: 0% 0% 0 50%;
+    }
+    .habilidades__elemento{
+        width: 120px;
+    }
+    .aficiones{
+        width: 200px;
+        padding: 0% 0% 0 10%;
+    }
+    .aficiones__titulo{
+       margin: 0 0 0 140%;
+    }
+    .formacion{
+        width: 200px;
+        padding: 10% 0% 0 5%;
+    }
+    .formacion__titulo{
+        margin: 0 0 0 140%;
+    }
+    .proyectos{
+        width: 200px;
+        padding: 10% 0% 0 45%;
+    }
+    .item{
+        width: 400px;
+    }
+    .contacto{
+        width: 150px;
+    }
+    .contacto__subtitulo{
+        width: 500px;
+        padding: 0 0 0 100%;
+    }
+    .contacto__formulario{
+        padding: 0 0 0 90%;
+    }
+    .contacto__campo,.contacto__campo--textarea{
+        width: 500px;
+    }
+    .rodapie{
+        width: 150%;
+    }
+    
+}
